@@ -1,0 +1,18 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": "last 2 versions, not ie <= 8"
+                },
+                "useBuiltIns": "usage" // usage-按需引入 entry-入口引入（整体引入） false-不引入polyfill
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime"
+        ]  
+    ]
+}
